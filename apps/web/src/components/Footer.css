@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+
+.zen-footer {
+  background-color: #12131C;
+  color: #E2E8F0;
+  margin-top: auto;
+}
+
+/* Assurance Bar */
+.footer-assurance-bar {
+  background-color: #1A1C29;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px 0;
+}
+
+.assurance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.assurance-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.assurance-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.assurance-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: block;
+}
+
+.assurance-sub {
+  font-size: 0.74rem;
+  color: #94A3B8;
+}
+
+/* Main Content */
+.footer-main-content {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  gap: 36px;
+  margin-bottom: 40px;
+}
+
+.brand-title-wrap {
+  margin-bottom: 12px;
+}
+
+.footer-brand-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  display: block;
+  line-height: 1.1;
+}
+
+.footer-brand-tagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.4px;
+}
+
+.brand-summary {
+  font-size: 0.82rem;
+  color: #94A3B8;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.app-download-note {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: #CBD5E1;
+}
+
+.footer-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links-list button, .footer-links-list span {
+  font-size: 0.82rem;
+  color: #94A3B8;
+  text-align: left;
+  transition: color var(--transition-fast);
+}
+
+.footer-links-list button:hover {
+  color: #FFFFFF;
+}
+
+.footer-links-list .highlight-link {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+.footer-links-list .highlight-link:hover {
+  color: #FFA333;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem;
+  color: #94A3B8;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.payment-gateways-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pay-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 992px) {
+  .assurance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-links-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .assurance-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

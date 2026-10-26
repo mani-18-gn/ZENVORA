@@ -1,0 +1,180 @@
+/* ==========================================================================
+   Address Management View Styles
+   ========================================================================== */
+
+.addresses-page {
+  padding: 24px 0 60px;
+}
+
+.addresses-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.addresses-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  line-height: 1.2;
+}
+
+.addresses-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.empty-addresses-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-pin-icon {
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.addresses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.address-card {
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-card);
+}
+
+.address-card.is-default {
+  border-color: var(--color-primary);
+  background-color: #FAF8FF;
+}
+
+.addr-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.addr-type-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.default-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.addr-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.addr-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 4px;
+}
+
+.addr-landmark {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.addr-phone {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  color: var(--color-text-main);
+}
+
+.addr-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.make-default-btn {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-right: auto;
+}
+.make-default-btn:hover {
+  text-decoration: underline;
+}
+
+.edit-addr-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  padding: 4px 8px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-border);
+}
+.edit-addr-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.delete-addr-btn {
+  color: var(--color-text-muted);
+  padding: 4px;
+}
+.delete-addr-btn:hover {
+  color: var(--color-danger);
+}
+
+@media (max-width: 992px) {
+  .addresses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .addresses-grid {
+    grid-template-columns: 1fr;
+  }
+}
